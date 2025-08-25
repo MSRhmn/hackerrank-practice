@@ -16,12 +16,7 @@ import sys
 
 def simpleArraySum(ar):
     # Write your code here
-    count = 0
-    for r in ar:
-        count += r
-
-    return count
-
+    sum(ar)
 
 if __name__ == "__main__":
     fptr = open(os.environ["OUTPUT_PATH"], "w")
