@@ -13,17 +13,18 @@ import sys
 # The function accepts LONG_INTEGER_ARRAY ar as parameter.
 #
 
+
 def aVeryBigSum(ar):
     # Write your code here
     result = 0
     for num in ar:
         result += num
-    
+
     return result
 
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     ar_count = int(input().strip())
 
@@ -31,6 +32,6 @@ if __name__ == '__main__':
 
     result = aVeryBigSum(ar)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()
